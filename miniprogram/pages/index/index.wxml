@@ -1,48 +1,76 @@
 <view class="container">
   
-<view class="top">
-  <view class="campus">兴庆</view>
-  <view class="campus">雁塔</view>
-  <view class="campus">创新港</view>
-</view>
+  <view class="top">
+    <view class="campus">兴庆</view>
+    <view class="campus">雁塔</view>
+    <view class="campus">创新港</view>
+  </view>
 
-<view class="bar">
-    <input class="search" placeholder="想搜些什么？" placeholder-class="placeholder"></input>
-    <image class="release" src="/images/release.png"></image>
-</view>
+  <view class="bar">
+      <input class="search" placeholder="想搜些什么？" placeholder-class="placeholder"></input>
+      <image class="avatar" src="/images/cherry.png"></image>
+  </view>
+
+  <swiper class="banner" autoplay next-margin="45rpx">
+    <swiper-item>
+      <image class="banner-image" mode="aspectFill" src="/images/1.jpg"></image>
+    </swiper-item>
+    <swiper-item>
+      <image class="banner-image" mode="aspectFill" src="/images/blue.png"></image>
+    </swiper-item>
+    <swiper-item>
+      <image class="banner-image" mode="aspectFill" src="/images/2.jpg"></image>
+    </swiper-item>
+  </swiper>
+
+  <view class="category">
+    <view class="goods-category">数码</view>
+    <view class="goods-category">门票</view>
+    <view class="goods-category">书本</view>
+    <view class="goods-category">其他</view>
+  </view>
 
   <view class="main">
     <view class="item">
-      <image class="goods-image" src="/images/1.jpg"></image>
+      <image class="goods-image" mode="aspectFill" src="/images/1.jpg"></image>
       <view class="description">
-        <view class="title">潮流ins卫衣</view>
-        <view class="number">
-          <view class="count">35次浏览</view>
-          <view class="money">￥250</view>
+        <view class="blur">
+          <text class="title">潮流ins卫衣潮流ins卫衣潮流ins卫衣潮流ins卫衣潮流ins卫衣</text>
+          <view class="count">
+            <view class="views">35次浏览</view>
+            <view class="money">￥250</view>
+          </view>
         </view>
       </view>
     </view>
     <view class="item">
-      <image class="goods-image" src="/images/2.jpg"></image>
+      <image class="goods-image" mode="aspectFill" src="/images/2.jpg"></image>
       <view class="description">
-        <view class="title">女生自用男朋友</view>
-        <view class="number">
-          <view class="count">2999次浏览</view>
-          <view class="money">￥3350</view>
+        <view class="blur">
+          <text class="title">女生自用男朋友</text>
+          <view class="count">
+            <view class="views">2999次浏览</view>
+            <view class="money">￥3350</view>
+          </view>
         </view>
       </view>
     </view>
     <view class="item">
-      <image class="goods-image" src="/images/3.jpg"></image>
+      <image class="goods-image" mode="aspectFill" src="/images/3.jpg"></image>
       <view class="description">
-        <view class="title">“rnm退钱！”</view>
-        <view class="number">
-          <view class="count">0次浏览</view>
-          <view class="money">￥50</view>
+        <view class="blur">
+          <text class="title">白色的衣服</text>
+          <view class="count">
+            <view class="views">0次浏览</view>
+            <view class="money">￥50</view>
+          </view>
         </view>
       </view>
     </view>
   </view>
 
+  <view class="release">
+    <image class="plus" src="/images/release.png"></image>
+  </view>
 
 </view>

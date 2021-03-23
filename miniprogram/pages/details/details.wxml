@@ -27,8 +27,37 @@
       <text class="details">一窝小橘猫（100）幼猫 纯橘猫 橘白猫 中华田园猫 狸花猫 三花猫 森林猫 狮子猫 奶牛猫 黑白猫 纯黑猫 纯白猫 森林猫 缅因猫 英短混血猫 美短混血猫 普通猫 土猫 家养猫 小猫咪</text>
       <text class="details">田园猫全款100起</text>
       <text class="details">长毛猫全款200起</text>
+      <text class="details">一窝小橘猫（100）幼猫 纯橘猫 橘白猫 中华田园猫 狸花猫 三花猫 森林猫 狮子猫 奶牛猫 黑白猫 纯黑猫 纯白猫 森林猫 缅因猫 英短混血猫 美短混血猫 普通猫 土猫 家养猫 小猫咪</text>
+      <text class="details">田园猫全款100起</text>
+      <text class="details">长毛猫全款200起</text>
+      <text class="details">一窝小橘猫（100）幼猫 纯橘猫 橘白猫 中华田园猫 狸花猫 三花猫 森林猫 狮子猫 奶牛猫 黑白猫 纯黑猫 纯白猫 森林猫 缅因猫 英短混血猫 美短混血猫 普通猫 土猫 家养猫 小猫咪</text>
+      <text class="details">田园猫全款100起</text>
+      <text class="details">长毛猫全款200起</text>
     </view>
 
+  </view>
+
+  <view class="bottom">
+    <view class="blur">
+      <view class="action">
+        <view class="button">
+          <image class="action-img" src="/images/cherry.png"></image>
+          <text class="action-name">点赞</text>
+        </view>
+        <view class="button">
+          <image class="action-img" src="/images/cherry.png"></image>
+          <text class="action-name">留言</text>
+        </view>
+        <view class="button">
+          <image class="action-img" src="/images/cherry.png"></image>
+          <text class="action-name">收藏</text>
+        </view>
+      </view>
+
+      <view class="buy">
+        <text>我想要</text>
+      </view>
+    </view>
   </view>
 
 </view>

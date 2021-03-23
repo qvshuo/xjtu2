@@ -73,7 +73,7 @@
   flex-direction: row;
   justify-content: flex-start;
   align-items: center;
-  box-shadow: 0 0 20rpx 1rpx rgba(0, 0, 0, 0.15);
+  box-shadow: 0 0 15rpx 1rpx rgba(0, 0, 0, 0.15);
 }
 
 .more .list .icon {

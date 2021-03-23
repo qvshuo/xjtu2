@@ -52,3 +52,60 @@
   color: #333333;
   line-height: 50rpx;
 }
+
+.bottom {
+  width: 750rpx;
+  height: 125rpx;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  background-image: linear-gradient(to bottom right, #e89abe4b, #f6f6f6);
+  box-shadow: 0 0 15rpx 1rpx rgba(0, 0, 0, 0.15);
+}
+
+.bottom .blur {
+  width: 750rpx;
+  height: 125rpx;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  background: rgba(250,250,250,0.25);
+	backdrop-filter: blur(25rpx);
+}
+
+.bottom .blur .action {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+
+.bottom .blur .action .button {
+  padding-left: 30rpx;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.bottom .blur .action .button .action-img {
+  width: 50rpx;
+  height: 50rpx;
+}
+
+.bottom .blur .action .button .action-name {
+  font-size: small;
+}
+
+.bottom .blur .buy {
+  background-image: linear-gradient(to right, #feb585 , #ee195f);  width: 175rpx;
+  height: 80rpx;
+  border-radius: 40rpx;
+  margin-right: 30rpx;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  font-weight: bold;
+  color: white;
+}

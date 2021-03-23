@@ -154,5 +154,5 @@
   position: fixed;
   bottom: 50rpx;
   right: 325rpx;
-  box-shadow: 0 0 20rpx 1rpx rgba(0, 0, 0, 0.15);
+  box-shadow: 0 0 15rpx 1rpx rgba(0, 0, 0, 0.15);
 }

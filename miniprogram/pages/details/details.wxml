@@ -1,0 +1,34 @@
+<view class="container">
+
+  <swiper class="banner" autoplay="true">
+    <swiper-item>
+      <image class="banner-image" mode="aspectFill" src="/images/1.jpg"></image>
+    </swiper-item>
+    <swiper-item>
+      <image class="banner-image" mode="aspectFill" src="/images/2.jpg"></image>
+    </swiper-item>
+    <swiper-item>
+      <image class="banner-image" mode="aspectFill" src="/images/3.jpg"></image>
+    </swiper-item>
+  </swiper>
+
+  <view class="main">
+
+    <view class="money">
+      <text class="now-money">￥380</text>
+      <text class="pre-money">￥9998</text>
+    </view>
+
+    <view class="title">
+      <text>9成新 苹果 iPhone7 Plus 128G 黑色</text>
+    </view>
+
+    <view class="description">
+      <text class="details">一窝小橘猫（100）幼猫 纯橘猫 橘白猫 中华田园猫 狸花猫 三花猫 森林猫 狮子猫 奶牛猫 黑白猫 纯黑猫 纯白猫 森林猫 缅因猫 英短混血猫 美短混血猫 普通猫 土猫 家养猫 小猫咪</text>
+      <text class="details">田园猫全款100起</text>
+      <text class="details">长毛猫全款200起</text>
+    </view>
+
+  </view>
+
+</view>

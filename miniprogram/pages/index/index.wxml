@@ -8,10 +8,10 @@
 
   <view class="bar">
       <input class="search" placeholder="想搜些什么？" placeholder-class="placeholder"></input>
-      <image class="avatar" src="/images/cherry.png"></image>
+      <image class="avatar" src="/images/cherry.png" bindtap="redirectToUser"></image>
   </view>
 
-  <swiper class="banner" autoplay next-margin="45rpx">
+  <swiper class="banner" autoplay="true" next-margin="45rpx">
     <swiper-item>
       <image class="banner-image" mode="aspectFill" src="/images/1.jpg"></image>
     </swiper-item>
@@ -31,7 +31,7 @@
   </view>
 
   <view class="main">
-    <view class="item">
+    <view class="item" bindtap="redirectToDetails">
       <image class="goods-image" mode="aspectFill" src="/images/1.jpg"></image>
       <view class="description">
         <view class="blur">

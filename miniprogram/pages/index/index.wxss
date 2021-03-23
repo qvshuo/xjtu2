@@ -1,5 +1,5 @@
 .container {
-  padding-left: 30rpx;
+  margin-left: 30rpx;
 }
 
 .top {
@@ -58,7 +58,7 @@
 }
 
 .category {
-  margin-top: 10rpx;
+  margin-top: 30rpx;
   height: 85rpx;
   display: flex;
   flex-direction: row;
@@ -114,7 +114,7 @@
   flex-direction: column;
   justify-content: space-around;
   background: rgba(250,250,250,0.25);
-	backdrop-filter: blur(25px);
+	backdrop-filter: blur(25rpx);
 }
 
 .main .item .description .title {
@@ -154,5 +154,5 @@
   position: fixed;
   bottom: 50rpx;
   right: 325rpx;
-  box-shadow: 0 0 2rpx 1rpx rgba(0, 0, 0, 0.15);
+  box-shadow: 0 0 20rpx 1rpx rgba(0, 0, 0, 0.15);
 }

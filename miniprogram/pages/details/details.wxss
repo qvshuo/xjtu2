@@ -1,0 +1,54 @@
+.banner {
+  width: 750rpx;
+  height: 750rpx;
+}
+
+.banner .banner-image {
+  width: 750rpx;
+  height: 750rpx;
+}
+
+.main {
+  padding-left: 30rpx;
+  padding-right: 30rpx;
+}
+
+.money {
+  height: 75rpx;
+  margin-bottom: 25rpx;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-end;
+}
+
+.money .now-money {
+  font-size: larger;
+  color: red;
+  margin-right: 15rpx;
+}
+
+.money .pre-money {
+  font-size: small;
+  color: gray;
+  text-decoration: line-through;
+  margin-left: 15rpx;
+}
+
+.title {
+  font-size: large;
+  font-weight: bold;
+  height: 75rpx;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.description {
+  padding-top: 30rpx;
+}
+
+.description .details {
+  color: #333333;
+  line-height: 50rpx;
+}

@@ -1,0 +1,84 @@
+.container {
+  background-image: linear-gradient(to bottom right, #e89abe4b, #f6f6f6);
+}
+
+.top {
+  background: rgba(250,250,250,0.25);
+	backdrop-filter: blur(50rpx);
+}
+
+.login {
+  height: 300rpx;
+  padding-top: 50rpx;
+  padding-bottom: 50rpx;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.login .avatar {
+  width: 150rpx;
+  height: 150rpx;
+  border-radius: 75rpx;
+}
+
+.login .username {
+  font-size: large;
+  font-weight: bold;
+}
+
+.count {
+  height: 150rpx;
+  margin-left: 30rpx;
+  margin-right: 30rpx;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.count .item {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.count .item .number {
+  font-size: large;
+  font-weight: bold;
+}
+
+.count .item .category {
+  color: gray;
+}
+
+.more {
+  background-color: white;
+  padding-top: 45rpx;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.more .list {
+  background-color: #f2f2f7;
+  width: 690rpx;
+  height: 125rpx;
+  border-radius: 25rpx;
+  margin-top: 15rpx;
+  margin-bottom: 30rpx;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  box-shadow: 0 0 20rpx 1rpx rgba(0, 0, 0, 0.15);
+}
+
+.more .list .icon {
+  width: 75rpx;
+  height: 75rpx;
+  padding-left: 30rpx;
+  padding-right: 30rpx;
+}

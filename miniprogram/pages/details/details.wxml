@@ -14,31 +14,53 @@
 
   <view class="main">
 
-    <view class="money">
-      <text class="now-money">￥380</text>
-      <text class="pre-money">￥9998</text>
+    <view class="row">
+      <view class="money">
+        <text class="now-money">￥380</text>
+        <text class="pre-money">￥9998</text>
+      </view>
+
+      <view class="views">
+        <text>78次浏览</text>
+      </view>
     </view>
 
     <view class="title">
-      <text>9成新 苹果 iPhone7 Plus 128G 黑色hhhhhhhhh哈哈哈哈哈哈哈哈哈哈哈哈哈hh哈哈哈哈哈</text>
+      <text>9成新 苹果 iPhone7 Plus 128G 黑色</text>
     </view>
 
-    <view class="description">
-      <text class="details">一窝小橘猫（100）幼猫 纯橘猫 橘白猫 中华田园猫 狸花猫 三花猫 森林猫 狮子猫 奶牛猫 黑白猫 纯黑猫 纯白猫 森林猫 缅因猫 英短混血猫 美短混血猫 普通猫 土猫 家养猫 小猫咪</text>
-      <text class="details">田园猫全款100起</text>
-      <text class="details">长毛猫全款200起</text>
-      <text class="details">一窝小橘猫（100）幼猫 纯橘猫 橘白猫 中华田园猫 狸花猫 三花猫 森林猫 狮子猫 奶牛猫 黑白猫 纯黑猫 纯白猫 森林猫 缅因猫 英短混血猫 美短混血猫 普通猫 土猫 家养猫 小猫咪</text>
-      <text class="details">田园猫全款100起</text>
-      <text class="details">长毛猫全款200起</text>
-      <text class="details">一窝小橘猫（100）幼猫 纯橘猫 橘白猫 中华田园猫 狸花猫 三花猫 森林猫 狮子猫 奶牛猫 黑白猫 纯黑猫 纯白猫 森林猫 缅因猫 英短混血猫 美短混血猫 普通猫 土猫 家养猫 小猫咪</text>
-      <text class="details">田园猫全款100起</text>
-      <text class="details">长毛猫全款200起</text>
+    <view class="announcer">
+      <image class="avatar" src="/images/blueberry.png"></image>
+      <view class="info">
+        <text class="name">小明</text>
+        <text class="time">发布于18小时前</text>
+      </view>
+    </view>
+
+    <view class="desc">
+      <view class="content">
+        <text>一窝小橘猫（100）幼猫 纯橘猫 橘白猫 中华田园猫 狸花猫 三花猫 森林猫 狮子猫 奶牛猫 黑白猫 纯黑猫 纯白猫 森林猫 缅因猫 英短混血猫 美短混血猫 普通猫 土猫 家养猫 小猫咪</text>
+      </view>
+      <view class="content">
+        <text>一窝小橘猫（100）幼猫 纯橘猫 橘白猫 中华田园猫 狸花猫 三花猫 森林猫 狮子猫 奶牛猫 黑白猫 纯黑猫 纯白猫 森林猫 缅因猫 英短混血猫 美短混血猫 普通猫 土猫 家养猫 小猫咪</text>
+      </view>
+      <view class="content">
+        <text>一窝小橘猫（100）幼猫 纯橘猫 橘白猫 中华田园猫 狸花猫 三花猫 森林猫 狮子猫 奶牛猫 黑白猫 纯黑猫 纯白猫 森林猫 缅因猫 英短混血猫 美短混血猫 普通猫 土猫 家橘猫（100）幼猫 纯橘猫 橘白猫 中华田园猫 狸花猫 三花猫 森林猫 狮子猫 奶牛猫 黑白猫 纯黑猫 纯白猫 森林猫 缅因猫 英短混血猫 美短混血猫 普通猫 土猫 家橘猫（100）幼猫 纯橘猫 橘白猫 中华田园猫 狸花猫 三花猫 森林猫 狮子猫 奶牛猫 黑白猫 纯黑猫 纯白猫 森林猫 缅因猫 英短混血猫 美短混血猫 普通猫 土猫 家橘猫（100）幼猫 纯橘猫 橘白猫 中华田园猫 狸花猫 三花猫 森林猫 狮子猫 奶牛猫 黑白猫 纯黑猫 纯白猫 森林猫 缅因猫 英短混血猫 美短混血猫 普通猫 土猫 家橘猫（100）幼猫 纯橘猫 橘白猫 中华田园猫 狸花猫 三花猫 森林猫 狮子猫 奶牛猫 黑白猫 纯黑猫 纯白猫 森林猫 缅因猫 英短混血猫 美短混血猫 普通猫 土猫 家养猫 小猫咪</text>
+      </view>
     </view>
 
   </view>
 
+  <view class="comment">
+    <input class="add" placeholder="留言问问吧~" placeholder-class="placeholder"></input>
+    <view class="all">
+      <text>全部留言留言区呜呜呜呜太难了孩子写自闭了快</text>
+    </view>
+  </view>
+
   <view class="bottom">
-    <view class="blur">
+
+    <view class="bottom-blur">
       <view class="action">
         <view class="button">
           <image class="action-img" src="/images/cherry.png"></image>
@@ -53,11 +75,11 @@
           <text class="action-name">收藏</text>
         </view>
       </view>
-
-      <view class="buy">
+      <view class="want">
         <text>我想要</text>
       </view>
     </view>
+
   </view>
 
 </view>

@@ -13,26 +13,39 @@
   padding-right: 30rpx;
 }
 
-.money {
-  height: 75rpx;
-  margin-bottom: 25rpx;
+.main .row {
+  height: 100rpx;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.main .row .money {
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
   align-items: flex-end;
 }
 
-.money .now-money {
-  font-size: larger;
-  color: red;
-  margin-right: 15rpx;
+.main .row .money .now-money {
+  font-size: large;
+  color: #ff0000;
+  margin-right: 30rpx;
 }
 
-.money .pre-money {
+.main .row .money .pre-money {
   font-size: small;
-  color: gray;
+  color: #999999;
   text-decoration: line-through;
-  margin-left: 15rpx;
+}
+
+.main .views {
+  font-size: small;
+  color: #999999;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
 }
 
 .title {
@@ -45,27 +58,85 @@
   align-items: center;
 }
 
-.description {
-  padding-top: 30rpx;
+.main .announcer {
+  background-color: #f2f2f7;
+  width: 690rpx;
+  height: 125rpx;
+  margin-top: 30rpx;
+  margin-bottom: 45rpx;
+  border-radius: 25rpx;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  box-shadow: 0 0 15rpx 1rpx rgba(125, 125, 125, 0.1);
+}
+
+.main .announcer .avatar {
+  width: 75rpx;
+  height: 75rpx;
+  margin-left: 30rpx;
+  margin-right: 30rpx;
+}
+
+.main .announcer .info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: flex-start;
+}
+
+.main .announcer .info .name{
+  font-weight: bold;
+}
+
+.main .announcer .info .time {
+  font-size: small;
+  color: #999999;
+  padding-top: 15rpx;
+}
+
+
+.desc {
+  margin-top: 30rpx;
   padding-bottom: 155rpx;
 }
 
-.description .details {
+.desc .content {
   color: #333333;
   line-height: 50rpx;
+  padding-bottom: 15rpx;
+}
+
+.comment {
+  background-color: green;
+  padding-bottom: 500rpx;
+}
+
+.comment .add {
+  background: #f2f2f7;
+  height: 70rpx;
+  width: 560rpx;
+  margin-left: 30rpx;
+  margin-right: 60rpx;
+  border-radius: 25rpx;
+}
+
+.comment .add .placeholder {
+  color: #d6d6d6;
+  margin-left: 30rpx;
 }
 
 .bottom {
   width: 750rpx;
   height: 125rpx;
   position: fixed;
+  left: 0;
   bottom: 0;
-  right: 0;
   background-image: linear-gradient(to bottom right, #e89abe4b, #f6f6f6);
-  box-shadow: 0 0 15rpx 1rpx rgba(0, 0, 0, 0.15);
 }
 
-.bottom .blur {
+.bottom .bottom-blur {
   width: 750rpx;
   height: 125rpx;
   display: flex;
@@ -73,34 +144,36 @@
   justify-content: space-between;
   align-items: center;
   background: rgba(250,250,250,0.25);
-	backdrop-filter: blur(25rpx);
-}
+  backdrop-filter: blur(25rpx);
+  box-shadow: 0 0 15rpx 1rpx rgba(125, 125, 125, 0.1);}
 
-.bottom .blur .action {
+.bottom .bottom-blur .action {
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
+  align-items: center;
 }
 
-.bottom .blur .action .button {
-  padding-left: 30rpx;
+.bottom .bottom-blur .action .button {
+  margin-left: 30rpx;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
 }
 
-.bottom .blur .action .button .action-img {
-  width: 50rpx;
-  height: 50rpx;
+.bottom .bottom-blur .action .button .action-img {
+  width: 75rpx;
+  height: 75rpx;
 }
 
-.bottom .blur .action .button .action-name {
+.bottom .bottom-blur .action .button .action-name {
   font-size: small;
 }
 
-.bottom .blur .buy {
-  background-image: linear-gradient(to right, #feb585 , #ee195f);  width: 175rpx;
+.bottom .bottom-blur .want {
+  background-image: linear-gradient(to right, #ff7585 , #dd205f);
+  width: 175rpx;
   height: 80rpx;
   border-radius: 40rpx;
   margin-right: 30rpx;
@@ -109,5 +182,5 @@
   justify-content: space-around;
   align-items: center;
   font-weight: bold;
-  color: white;
+  color: #ffffff;
 }

@@ -1,27 +1,33 @@
 <view class="container">
   
-  <view class="top">
-    <view class="login">
-      <image class="avatar" src="/images/cherry.png"></image>
-      <text class="username">我要卖东西</text>
-    </view>
+  <view class="tophalf">
+    <view class="tophalf-blur">
+      <view class="login">
+        <view class='avatar'>
+          <open-data type="userAvatarUrl"></open-data>
+        </view>
+        <view class="username">
+          <open-data type="userNickName"></open-data>
+        </view>
+      </view>
 
-    <view class="count">
-      <view class="item">
-        <view class="number">5</view>
-        <text class="category">我收藏的</text>
-      </view>
-      <view class="item">
-        <view class="number">3</view>
-        <text class="category">我发布的</text>
-      </view>
-      <view class="item">
-        <view class="number">15</view>
-        <text class="category">我买到的</text>
-      </view>
-      <view class="item">
-        <view class="number">4</view>
-        <text class="category">我卖出的</text>
+      <view class="count">
+        <view class="item">
+          <view class="number">5</view>
+          <text class="category">我收藏的</text>
+        </view>
+        <view class="item">
+          <view class="number">3</view>
+          <text class="category">我发布的</text>
+        </view>
+        <view class="item">
+          <view class="number">15</view>
+          <text class="category">我买到的</text>
+        </view>
+        <view class="item">
+          <view class="number">4</view>
+          <text class="category">我卖出的</text>
+        </view>
       </view>
     </view>
   </view>
@@ -29,15 +35,19 @@
   <view class="more">
     <view class="list">
       <image class="icon" src="/images/pineapple.png"></image>
-      <text class="name">信息发布规范</text>
-    </view>
-    <view class="list">
-      <image class="icon" src="/images/strawberry.png"></image>
-      <text class="name">联系客服（活人）</text>
+      <text class="name">用户协议</text>
     </view>
     <view class="list">
       <image class="icon" src="/images/blueberry.png"></image>
-      <text class="name">其他有的没的</text>
+      <text class="name">联系客服</text>
+    </view>
+    <view class="list">
+      <image class="icon" src="/images/strawberry.png"></image>
+      <text class="name">关于团队</text>
+    </view>
+    <view class="list">
+      <image class="icon" src="/images/blueberry.png"></image>
+      <text class="name">支持我们</text>
     </view>
   </view>
 

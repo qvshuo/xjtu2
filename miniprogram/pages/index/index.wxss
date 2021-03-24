@@ -35,7 +35,8 @@
   width: 70rpx;
   height: 70rpx;
   border-radius: 35rpx;
-  box-shadow: 0 0 15rpx 1rpx rgba(125, 125, 125, 0.1);
+  overflow: hidden;
+  box-shadow: 0 0 15rpx 1rpx rgba(25, 25, 25, 0.15);
 }
 
 .banner {
@@ -71,13 +72,13 @@
 }
 
 .row .tab .category {
-  font-size: 36rpx;
+  font-size: large;
   font-weight: bold;
   padding-right: 30rpx;
 }
 
 .row .campus {
-  font-size: 36rpx;
+  font-size: large;
   font-weight: bold;
   padding-right: 15rpx;
 }
@@ -115,7 +116,7 @@
   height: 120rpx;
   border-bottom-left-radius: 25rpx;
   border-bottom-right-radius: 25rpx;
-  background-image: linear-gradient(to bottom right, #e89abe4b, #f6f6f6);}
+  background-image: linear-gradient(to bottom right, #e89abe4b, #f2f2f7);}
 
 .main .item .desc .desc-blur {
   width: 330rpx;
@@ -126,7 +127,7 @@
   flex-direction: column;
   justify-content: space-around;
   background: rgba(250,250,250,0.25);
-	backdrop-filter: blur(15rpx);
+	backdrop-filter: blur(25rpx);
 }
 
 .main .item .desc .title {
@@ -151,7 +152,7 @@
 
 .main .item .desc .count .views {
   font-size: small;
-  color: #666666;
+  color: #999999;
 }
 
 .main .item .desc .count .money {
@@ -159,7 +160,7 @@
   color: #ff0000;
 }
 
-.release .plus {
+.release {
   height: 100rpx;
   width: 100rpx;
   border-radius: 50rpx;

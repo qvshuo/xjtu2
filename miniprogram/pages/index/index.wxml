@@ -2,7 +2,9 @@
   
   <view class="topbar">
     <input class="search" placeholder="想搜些什么？" placeholder-class="placeholder"></input>
-    <image class="avatar" src="/images/cherry.png" bindtap="redirectToUser"></image>
+    <navigator class="avatar" url="/pages/user/user" hover-class="none">
+      <open-data type="userAvatarUrl"></open-data>
+    </navigator>
   </view>
 
   <swiper class="banner" autoplay="true" next-margin="45rpx">
@@ -68,8 +70,8 @@
     </view>
   </view>
 
-  <view class="release">
-    <image class="plus" src="/images/release.png"></image>
-  </view>
+  <navigator url="/pages/release/release" hover-class="none">
+    <image class="release" src="/images/release.png"></image>
+  </navigator>
 
 </view>

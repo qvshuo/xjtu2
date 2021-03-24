@@ -1,61 +1,62 @@
-.container {
-  background-image: linear-gradient(to bottom right, #e89abe4b, #f6f6f6);
+.tophalf {
+  background-image: linear-gradient(to bottom right, #e89abe4b, #f2f2f7);
 }
 
-.top {
+.tophalf .tophalf-blur {
   background: rgba(250,250,250,0.25);
-	backdrop-filter: blur(50rpx);
+  backdrop-filter: blur(25rpx);
 }
 
-.login {
+.tophalf .tophalf-blur .login {
   height: 300rpx;
-  padding-top: 50rpx;
-  padding-bottom: 50rpx;
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
+  justify-content: flex-start;
   align-items: center;
 }
 
-.login .avatar {
+.tophalf .tophalf-blur .login .avatar {
   width: 150rpx;
   height: 150rpx;
+  margin-top: 50rpx;
   border-radius: 75rpx;
+  overflow: hidden;
+  box-shadow: 0 0 15rpx 1rpx rgba(25, 25, 25, 0.15);
 }
 
-.login .username {
+.tophalf .tophalf-blur .login .username {
   font-size: large;
   font-weight: bold;
+  margin-top: 30rpx;
 }
 
-.count {
-  height: 150rpx;
-  margin-left: 30rpx;
-  margin-right: 30rpx;
+.tophalf .tophalf-blur .count {
+  height: 125rpx;
+  padding-left: 30rpx;
+  padding-right: 30rpx;
   display: flex;
   flex-direction: row;
   justify-content: space-around;
   align-items: center;
 }
 
-.count .item {
+.tophalf .tophalf-blur .count .item {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
 }
 
-.count .item .number {
+.tophalf .tophalf-blur .count .item .number {
   font-size: large;
   font-weight: bold;
 }
 
-.count .item .category {
-  color: gray;
+.tophalf .tophalf-blur .count .item .category {
+  color: #999999;
 }
 
 .more {
-  background-color: white;
   padding-top: 45rpx;
   display: flex;
   flex-direction: column;
@@ -66,19 +67,18 @@
   background-color: #f2f2f7;
   width: 690rpx;
   height: 125rpx;
+  margin-bottom: 45rpx;
   border-radius: 25rpx;
-  margin-top: 15rpx;
-  margin-bottom: 30rpx;
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
   align-items: center;
-  box-shadow: 0 0 15rpx 1rpx rgba(0, 0, 0, 0.15);
+  box-shadow: 0 0 15rpx 1rpx rgba(125, 125, 125, 0.1);
 }
 
 .more .list .icon {
   width: 75rpx;
   height: 75rpx;
-  padding-left: 30rpx;
-  padding-right: 30rpx;
+  margin-left: 30rpx;
+  margin-right: 30rpx;
 }

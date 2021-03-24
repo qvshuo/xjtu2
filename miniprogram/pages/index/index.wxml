@@ -1,14 +1,8 @@
 <view class="container">
   
-  <view class="top">
-    <view class="campus">兴庆</view>
-    <view class="campus">雁塔</view>
-    <view class="campus">创新港</view>
-  </view>
-
-  <view class="bar">
-      <input class="search" placeholder="想搜些什么？" placeholder-class="placeholder"></input>
-      <image class="avatar" src="/images/cherry.png" bindtap="redirectToUser"></image>
+  <view class="topbar">
+    <input class="search" placeholder="想搜些什么？" placeholder-class="placeholder"></input>
+    <image class="avatar" src="/images/cherry.png" bindtap="redirectToUser"></image>
   </view>
 
   <swiper class="banner" autoplay="true" next-margin="45rpx">
@@ -23,18 +17,23 @@
     </swiper-item>
   </swiper>
 
-  <view class="category">
-    <view class="goods-category">数码</view>
-    <view class="goods-category">门票</view>
-    <view class="goods-category">书本</view>
-    <view class="goods-category">其他</view>
+  <view class="row">
+    <view class="tab">
+      <view class="category">数码</view>
+      <view class="category">门票</view>
+      <view class="category">书本</view>
+      <view class="category">其他</view>
+    </view>
+    <view class="campus">
+      <view>校区</view>
+    </view>
   </view>
 
   <view class="main">
     <view class="item" bindtap="redirectToDetails">
       <image class="goods-image" mode="aspectFill" src="/images/1.jpg"></image>
-      <view class="description">
-        <view class="blur">
+      <view class="desc">
+        <view class="desc-blur">
           <text class="title">潮流ins卫衣潮流ins卫衣潮流ins卫衣潮流ins卫衣潮流ins卫衣</text>
           <view class="count">
             <view class="views">35次浏览</view>
@@ -45,8 +44,8 @@
     </view>
     <view class="item">
       <image class="goods-image" mode="aspectFill" src="/images/2.jpg"></image>
-      <view class="description">
-        <view class="blur">
+      <view class="desc">
+        <view class="desc-blur">
           <text class="title">女生自用男朋友</text>
           <view class="count">
             <view class="views">2999次浏览</view>
@@ -57,8 +56,8 @@
     </view>
     <view class="item">
       <image class="goods-image" mode="aspectFill" src="/images/3.jpg"></image>
-      <view class="description">
-        <view class="blur">
+      <view class="desc">
+        <view class="desc-blur">
           <text class="title">白色的衣服</text>
           <view class="count">
             <view class="views">0次浏览</view>

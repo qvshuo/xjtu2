@@ -2,79 +2,88 @@
   margin-left: 30rpx;
 }
 
-.top {
+.topbar {
+  background: white;
+  width: 750rpx;
+  height: 125rpx;
+  position: fixed;
+  z-index: 100;
+  left: 0;
+  top: 0;
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
+  justify-content: flex-start;
   align-items: center;
-  height: 120rpx;
-  padding-left: 100rpx;
-  padding-right: 100rpx;
-  margin-right: 30rpx;
+  box-shadow: 0 0 15rpx 1rpx rgba(125, 125, 125, 0.1);
 }
 
-.campus {
-  font-size: larger;
-  font-weight: bold;
-  color: #333333;
-}
-
-.bar {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-content: center;
-  height: 100rpx;
-  margin-right: 30rpx;
-}
-
-.bar .search {
-  background: #F6F6F6;
+.topbar .search {
+  background: #f2f2f7;
   height: 70rpx;
   width: 560rpx;
+  margin-left: 30rpx;
+  margin-right: 60rpx;
   border-radius: 25rpx;
-  padding-left: 25rpx;
 }
 
-.bar .placeholder {
-  color: #D6D6D6;
+.topbar .placeholder {
+  color: #d6d6d6;
+  margin-left: 30rpx;
 }
 
-.bar .avatar {
+.topbar .avatar {
   width: 70rpx;
   height: 70rpx;
   border-radius: 35rpx;
+  box-shadow: 0 0 15rpx 1rpx rgba(125, 125, 125, 0.1);
 }
 
 .banner {
   width: 690rpx;
   height: 250rpx;
+  margin-top: 125rpx;
+  padding-top: 30rpx;
 }
 
 .banner .banner-image {
   width: 615rpx;
   height: 250rpx;
   border-radius: 25rpx;
+  box-shadow: 0 0 15rpx 1rpx rgba(125, 125, 125, 0.1);
 }
 
-.category {
+.row {
+  height: 75rpx;
   margin-top: 30rpx;
-  height: 85rpx;
+  margin-right: 30rpx;
+  padding-left: 15rpx;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.row .tab {
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
   align-items: center;
-  margin-right: 30rpx;
 }
 
-.category .goods-category {
-  font-size: large;
+.row .tab .category {
+  font-size: 36rpx;
   font-weight: bold;
-  padding-left: 15rpx;
+  padding-right: 30rpx;
+}
+
+.row .campus {
+  font-size: 36rpx;
+  font-weight: bold;
   padding-right: 15rpx;
 }
 
 .main {
+  padding-top: 5rpx;
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
@@ -84,13 +93,14 @@
 .main .item {
   width: 330rpx;
   height: 450rpx;
+  margin-right: 30rpx;
+  margin-bottom: 30rpx;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
   border-bottom-left-radius: 25rpx;
   border-bottom-right-radius: 25rpx;
-  margin-right: 30rpx;
-  margin-bottom: 30rpx;
+  box-shadow: 0 0 15rpx 1rpx rgba(125, 125, 125, 0.1);
 }
 
 .main .item .goods-image {
@@ -100,13 +110,15 @@
   border-top-right-radius: 25rpx;
 }
 
-.main .item .description {
+.main .item .desc {
+  width: 330rpx;
   height: 120rpx;
   border-bottom-left-radius: 25rpx;
   border-bottom-right-radius: 25rpx;
   background-image: linear-gradient(to bottom right, #e89abe4b, #f6f6f6);}
 
-.main .item .description .blur {
+.main .item .desc .desc-blur {
+  width: 330rpx;
   height: 120rpx;
   border-bottom-left-radius: 25rpx;
   border-bottom-right-radius: 25rpx;
@@ -114,20 +126,20 @@
   flex-direction: column;
   justify-content: space-around;
   background: rgba(250,250,250,0.25);
-	backdrop-filter: blur(25rpx);
+	backdrop-filter: blur(15rpx);
 }
 
-.main .item .description .title {
+.main .item .desc .title {
   width: 300rpx;
+  font-weight: bold;
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
-  font-weight: bold;
   padding-left: 15rpx;
   padding-right: 15rpx;
 }
 
-.main .item .description .count {
+.main .item .desc .count {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -137,14 +149,14 @@
   padding-bottom: 10rpx;
 }
 
-.main .item .description .count .views {
+.main .item .desc .count .views {
   font-size: small;
-  color: gray;
+  color: #666666;
 }
 
-.main .item .description .count .money {
+.main .item .desc .count .money {
   font-size: large;
-  color: red;
+  color: #ff0000;
 }
 
 .release .plus {
@@ -152,7 +164,8 @@
   width: 100rpx;
   border-radius: 50rpx;
   position: fixed;
+  z-index: 100;
+  left: 325rpx;
   bottom: 50rpx;
-  right: 325rpx;
-  box-shadow: 0 0 15rpx 1rpx rgba(0, 0, 0, 0.15);
+  box-shadow: 0 0 15rpx 1rpx rgba(25, 25, 25, 0.15);
 }

@@ -1,11 +1,14 @@
 .container {
   margin-left: 30rpx;
+  padding-top: 125rpx;
 }
 
 .topbar {
-  background: white;
+  background: #ffffff;
   width: 750rpx;
   height: 125rpx;
+  padding-left: 30rpx;
+  padding-right: 30rpx;
   position: fixed;
   z-index: 100;
   left: 0;
@@ -20,15 +23,14 @@
 .topbar .search {
   background: #f2f2f7;
   height: 70rpx;
-  width: 560rpx;
-  margin-left: 30rpx;
-  margin-right: 60rpx;
+  width: 590rpx;
+  margin-right: 30rpx;
   border-radius: 25rpx;
 }
 
 .topbar .placeholder {
   color: #d6d6d6;
-  margin-left: 30rpx;
+  padding-left: 30rpx;
 }
 
 .topbar .avatar {
@@ -42,7 +44,6 @@
 .banner {
   width: 690rpx;
   height: 250rpx;
-  margin-top: 125rpx;
   padding-top: 30rpx;
 }
 
@@ -54,9 +55,9 @@
 }
 
 .row {
-  height: 75rpx;
+  height: 60rpx;
   margin-top: 30rpx;
-  margin-right: 30rpx;
+  padding-right: 30rpx;
   padding-left: 15rpx;
   display: flex;
   flex-direction: row;
@@ -72,19 +73,24 @@
 }
 
 .row .tab .category {
-  font-size: large;
-  font-weight: bold;
-  padding-right: 30rpx;
+  background: #f2f2f7;
+  height: 50rpx;
+  border-radius: 25rpx;
+  padding-left: 15rpx;
+  padding-right: 15rpx;
+  margin-right: 30rpx;
 }
 
 .row .campus {
-  font-size: large;
-  font-weight: bold;
+  background: #f2f2f7;
+  height: 45rpx;
+  border-radius: 22.5rpx;
+  padding-left: 15rpx;
   padding-right: 15rpx;
 }
 
 .main {
-  padding-top: 5rpx;
+  padding-top: 15rpx;
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
@@ -123,6 +129,8 @@
   height: 120rpx;
   border-bottom-left-radius: 25rpx;
   border-bottom-right-radius: 25rpx;
+  padding-left: 15rpx;
+  padding-right: 15rpx;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
@@ -130,34 +138,31 @@
 	backdrop-filter: blur(25rpx);
 }
 
-.main .item .desc .title {
+.main .item .desc .desc-blur .title {
   width: 300rpx;
   font-weight: bold;
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
-  padding-left: 15rpx;
-  padding-right: 15rpx;
 }
 
-.main .item .desc .count {
+.main .item .desc .desc-blur .count {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: flex-end;
-  padding-left: 15rpx;
-  padding-right: 15rpx;
   padding-bottom: 10rpx;
 }
 
-.main .item .desc .count .views {
+.main .item .desc .desc-blur .count .views {
   font-size: small;
   color: #999999;
 }
 
-.main .item .desc .count .money {
+.main .item .desc .desc-blur .count .money {
   font-size: large;
   color: #ff0000;
+  padding-right: 15rpx;
 }
 
 .release {

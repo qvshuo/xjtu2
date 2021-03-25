@@ -64,7 +64,7 @@
 }
 
 .more .list {
-  background-color: #f2f2f7;
+  background: #f2f2f7;
   width: 690rpx;
   height: 125rpx;
   margin-bottom: 45rpx;

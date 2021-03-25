@@ -1,1 +1,181 @@
-/* miniprogram/pages/release/release.wxss */
+.container {
+  padding-top: 125rpx;
+}
+
+.topbar {
+  background: #ffffff;
+  width: 750rpx;
+  height: 125rpx;
+  padding-left: 30rpx;
+  padding-right: 30rpx;
+  position: fixed;
+  z-index: 100;
+  left: 0;
+  top: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 0 15rpx 1rpx rgba(125, 125, 125, 0.1);
+}
+
+.topbar .title {
+  font-size: large;
+  font-weight: bold;
+}
+
+.topbar .ok {
+  background-image: linear-gradient(to right, #ff7585 , #dd205f);
+  width: 125rpx;
+  height: 70rpx;
+  border-radius: 35rpx;
+  margin-right: 60rpx;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  font-weight: bold;
+  color: #ffffff;
+  box-shadow: 0 0 15rpx 1rpx rgba(25, 25, 25, 0.15);
+}
+
+.info {
+  background: #ffffff;
+  width: 750rpx;
+  height: 250rpx;
+  padding: 30rpx;
+}
+
+.info .placeholder {
+  color: #d6d6d6;
+  padding-left: 30rpx;
+}
+
+.photos {
+  background: #ffffff;
+  padding-left: 30rpx;
+  padding-top: 30rpx;
+  padding-bottom: 15rpx;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  box-shadow: 0 0 15rpx 1rpx rgba(125, 125, 125, 0.1);
+}
+
+.photos .photo {
+  width: 220rpx;
+  height: 220rpx;
+  border-radius: 25rpx;
+  margin-right: 15rpx;
+  margin-bottom: 15rpx;
+}
+
+.photos .add {
+  width: 220rpx;
+  height: 220rpx;
+  border-radius: 25rpx;
+  margin-right: 15rpx;
+  margin-bottom: 15rpx;
+}
+
+.campus {
+  padding: 30rpx;
+  width: 750rpx;
+  height: 150rpx;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: flex-start;
+}
+
+.campus .campus-title {
+  font-size: large;
+  font-weight: bold;
+}
+
+.campus .regions {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.campus .region {
+  background: #f2f2f7;
+  height: 45rpx;
+  border-radius: 22.5rpx;
+  padding-left: 15rpx;
+  padding-right: 15rpx;
+  margin-right: 30rpx;
+}
+
+.category {
+  padding: 30rpx;
+  width: 750rpx;
+  height: 150rpx;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: flex-start;
+}
+
+.category .category-title {
+  font-size: large;
+  font-weight: bold;
+}
+
+.category .tabs {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.category .tab {
+  background: #f2f2f7;
+  height: 45rpx;
+  border-radius: 22.5rpx;
+  padding-left: 15rpx;
+  padding-right: 15rpx;
+  margin-right: 30rpx;
+}
+
+.money {
+  padding: 30rpx;
+  width: 750rpx;
+  height: 175rpx;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.money .money-title {
+  font-size: large;
+  font-weight: bold;
+}
+
+.money .money-input {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.money .placeholder {
+  color: #d6d6d6;
+  padding-left: 30rpx;
+}
+
+.money .money-input .pre-money {
+  background: #f2f2f7;
+  width: 330rpx;
+  height: 70rpx;
+  margin-right: 30rpx;
+  border-radius: 25rpx;
+}
+
+.money .money-input .now-money {
+  background: #f2f2f7;
+  width: 330rpx;
+  height: 70rpx;
+  border-radius: 25rpx;
+}

@@ -30,7 +30,7 @@
     </view>
 
     <view class="announcer">
-      <image class="avatar" src="/images/blueberry.png"></image>
+      <image class="avatar" src="/images/cherry.png"></image>
       <view class="info">
         <text class="name">小明</text>
         <text class="time">发布于18小时前</text>
@@ -52,7 +52,10 @@
   </view>
 
   <view class="comment">
-    <input class="add" placeholder="留言问问吧~" placeholder-class="placeholder"></input>
+    <view class="row2">
+      <image class="useravatar" src="/images/cherry.png"></image>
+      <input class="add" placeholder="留言问问吧~" placeholder-class="placeholder"></input>
+    </view>
     <view class="all">
       <text>全部留言留言区呜呜呜呜太难了孩子写自闭了快</text>
     </view>
@@ -60,24 +63,18 @@
 
   <view class="bottom">
 
-    <view class="bottom-blur">
-      <view class="action">
-        <view class="button">
-          <image class="action-img" src="/images/cherry.png"></image>
-          <text class="action-name">点赞</text>
-        </view>
-        <view class="button">
-          <image class="action-img" src="/images/cherry.png"></image>
-          <text class="action-name">留言</text>
-        </view>
-        <view class="button">
-          <image class="action-img" src="/images/cherry.png"></image>
-          <text class="action-name">收藏</text>
-        </view>
+    <view class="action">
+      <view class="button">
+        <image class="action-img" src="/images/cherry.png"></image>
+        <text class="action-name">点赞</text>
       </view>
-      <view class="want">
-        <text>我想要</text>
+      <view class="button">
+        <image class="action-img" src="/images/cherry.png"></image>
+        <text class="action-name">收藏</text>
       </view>
+    </view>
+    <view class="want">
+      <text>我想要</text>
     </view>
 
   </view>

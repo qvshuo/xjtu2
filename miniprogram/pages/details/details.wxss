@@ -141,7 +141,7 @@
 .comment .row2 .add {
   background: #f2f2f7;
   height: 70rpx;
-  width: 560rpx;
+  width: 590rpx;
   margin-left: 30rpx;
   border-radius: 25rpx;
 }

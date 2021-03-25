@@ -28,12 +28,15 @@
 
   <view class="category">
     <view class="category-title">分类</view>
-    <view class="tabs">
+    <scroll-view class="tabs" scroll-x="true">
+      <view class="tab">数码</view>
+      <view class="tab">服饰</view>
+      <view class="tab">书籍</view>
       <view class="tab">数码</view>
       <view class="tab">服饰</view>
       <view class="tab">书籍</view>
       <view class="tab">其他</view>
-    </view>
+    </scroll-view>
   </view>
 
   <view class="money">

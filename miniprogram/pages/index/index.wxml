@@ -20,15 +20,15 @@
   </swiper>
 
   <view class="row">
-    <view class="tab">
+    <scroll-view class="tab" scroll-x="true" enhanced="true" showScrollbar="false">
+      <view class="category">数码</view>
+      <view class="category">门票</view>
+      <view class="category">书本</view>
       <view class="category">数码</view>
       <view class="category">门票</view>
       <view class="category">书本</view>
       <view class="category">其他</view>
-    </view>
-    <view class="campus">
-      <view>校区</view>
-    </view>
+    </scroll-view>
   </view>
 
   <view class="main">

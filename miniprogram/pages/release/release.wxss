@@ -4,10 +4,9 @@
 
 .topbar {
   background: #ffffff;
-  width: 750rpx;
+  width: 720rpx;
   height: 125rpx;
   padding-left: 30rpx;
-  padding-right: 30rpx;
   position: fixed;
   z-index: 100;
   left: 0;
@@ -29,7 +28,7 @@
   width: 125rpx;
   height: 70rpx;
   border-radius: 35rpx;
-  margin-right: 60rpx;
+  margin-right: 30rpx;
   display: flex;
   flex-direction: row;
   justify-content: space-around;
@@ -41,7 +40,7 @@
 
 .info {
   background: #ffffff;
-  width: 750rpx;
+  width: 600rpx;
   height: 250rpx;
   padding: 30rpx;
 }
@@ -102,8 +101,9 @@
 
 .campus .region {
   background: #f2f2f7;
-  height: 45rpx;
-  border-radius: 22.5rpx;
+  line-break: 50rpx;
+  text-align: center;
+  border-radius: 25rpx;
   padding-left: 15rpx;
   padding-right: 15rpx;
   margin-right: 30rpx;
@@ -125,15 +125,17 @@
 }
 
 .category .tabs {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
+  width: 750rpx;
+  white-space: nowrap;
 }
 
 .category .tab {
   background: #f2f2f7;
-  height: 45rpx;
-  border-radius: 22.5rpx;
+  width: 75rpx;
+  line-height: 50rpx;
+  text-align: center;
+  border-radius: 25rpx;
+  display: inline-block;
   padding-left: 15rpx;
   padding-right: 15rpx;
   margin-right: 30rpx;
@@ -146,6 +148,7 @@
   display: flex;
   flex-direction: column;
   justify-content: space-around;
+  align-items: flex-start;
 }
 
 .money .money-title {
@@ -178,4 +181,11 @@
   width: 330rpx;
   height: 70rpx;
   border-radius: 25rpx;
+}
+
+/*隐藏滚动条*/
+::-webkit-scrollbar {
+  width: 0;
+  height: 0;
+  color: transparent;
 }

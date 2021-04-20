@@ -1,7 +1,7 @@
 <view class="container">
   
   <view class="topbar">
-    <input class="search" placeholder="想搜些什么？" placeholder-class="placeholder"></input>
+    <input class="search" placeholder="想搜些什么？" placeholder-class="placeholder" bindinput="myIpt"></input>
     <navigator class="avatar" url="/pages/user/user" hover-class="none">
       <open-data type="userAvatarUrl"></open-data>
     </navigator>
@@ -9,7 +9,7 @@
 
   <swiper class="banner" autoplay="true" next-margin="45rpx">
     <swiper-item>
-      <image class="banner-image" mode="aspectFill" src="/images/1.jpg"></image>
+      <image class="banner-image" mode="aspectFill" src="cloud://xjtu2-6g9wzdkv2fbfc62e.786a-xjtu2-6g9wzdkv2fbfc62e-1305322465/1618896340356_0.jpg" bindtap="redirectToDetails"></image>
     </swiper-item>
     <swiper-item>
       <image class="banner-image" mode="aspectFill" src="/images/blue.png"></image>
@@ -21,49 +21,25 @@
 
   <view class="row">
     <scroll-view class="tab" scroll-x="true" enhanced="true" showScrollbar="false">
-      <view class="category">数码</view>
-      <view class="category">门票</view>
-      <view class="category">书本</view>
-      <view class="category">数码</view>
-      <view class="category">门票</view>
-      <view class="category">书本</view>
-      <view class="category">其他</view>
+      <button class="category" bindtap="lookfor_sm">数码</button>
+      <button class="category" bindtap="lookfor_fs">服饰</button>
+      <button class="category" bindtap="lookfor_sj">书籍</button>
+      <button class="category" bindtap="lookfor_sb">手办</button>
+      <button class="category" bindtap="lookfor_xz">鞋子</button>
+      <button class="category" bindtap="lookfor_mp">门票</button>
+      <button class="category" bindtap="lookfor_qt">其他</button>
     </scroll-view>
   </view>
 
   <view class="main">
-    <view class="item" bindtap="redirectToDetails">
-      <image class="goods-image" mode="aspectFill" src="/images/1.jpg"></image>
+    <view class="item" bindtap="redirectToDetails" wx:for="{{dataArr}}" wx:key="index">
+      <image class="goods-image" mode="aspectFill" src="{{item.photoPath[0]}}"></image>
       <view class="desc">
         <view class="desc-blur">
-          <text class="title">潮流ins卫衣潮流ins卫衣潮流ins卫衣潮流ins卫衣潮流ins卫衣</text>
+          <text class="title">{{item.ifmt}}</text>
           <view class="count">
             <view class="views">35次浏览</view>
-            <view class="money">￥250</view>
-          </view>
-        </view>
-      </view>
-    </view>
-    <view class="item">
-      <image class="goods-image" mode="aspectFill" src="/images/2.jpg"></image>
-      <view class="desc">
-        <view class="desc-blur">
-          <text class="title">女生自用男朋友</text>
-          <view class="count">
-            <view class="views">2999次浏览</view>
-            <view class="money">￥3350</view>
-          </view>
-        </view>
-      </view>
-    </view>
-    <view class="item">
-      <image class="goods-image" mode="aspectFill" src="/images/3.jpg"></image>
-      <view class="desc">
-        <view class="desc-blur">
-          <text class="title">白色的衣服</text>
-          <view class="count">
-            <view class="views">0次浏览</view>
-            <view class="money">￥50</view>
+            <view class="money">￥{{item.now}}</view>
           </view>
         </view>
       </view>

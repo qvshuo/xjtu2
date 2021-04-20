@@ -1,3 +1,4 @@
+const db=wx.cloud.database()
 // miniprogram/pages/details/details.js
 Page({
 
@@ -5,14 +6,29 @@ Page({
    * 页面的初始数据
    */
   data: {
-
+    
   },
 
+  //从数据库中抓取图片,调用失败
+  getData(){
+    db.collection("goods").doc("b00064a7607e79d50fc25828644b9c64")
+    .get()
+    .then(res=>{
+      console.log(res)
+      this.setData({
+        photo:res.data.photoPath,
+        pre:res.data.pre,
+        now:res.data.now,
+        ifmt:res.data.ifmt
+      })
+    })
+  },
+  
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-
+    this.getData()
   },
 
   /**

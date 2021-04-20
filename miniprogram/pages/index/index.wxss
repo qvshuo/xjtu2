@@ -79,6 +79,7 @@
   padding-left: 15rpx;
   padding-right: 15rpx;
   margin-right: 30rpx;
+  width: 20%;
 }
 
 .main {

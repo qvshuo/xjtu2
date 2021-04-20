@@ -23,7 +23,7 @@
   font-weight: bold;
 }
 
-.topbar .ok {
+.ok {
   background-image: linear-gradient(to right, #ff7585 , #dd205f);
   width: 125rpx;
   height: 70rpx;
@@ -70,9 +70,10 @@
   margin-bottom: 15rpx;
 }
 
-.photos .add {
+.add {
+  background-color:#ffb6c1;
   width: 220rpx;
-  height: 220rpx;
+  height: 100rpx;
   border-radius: 25rpx;
   margin-right: 15rpx;
   margin-bottom: 15rpx;
@@ -94,19 +95,22 @@
 }
 
 .campus .regions {
+  width: 750rpx;
   display: flex;
-  flex-direction: row;
-  align-items: center;
+  flex-wrap: nowrap;
 }
 
-.campus .region {
+.campus .regin {
   background: #f2f2f7;
-  line-break: 50rpx;
+  width: 75rpx;
+  line-height: 50rpx;
   text-align: center;
   border-radius: 25rpx;
+  display: inline-block;
   padding-left: 15rpx;
   padding-right: 15rpx;
   margin-right: 30rpx;
+  width: 20%;
 }
 
 .category {
@@ -139,6 +143,7 @@
   padding-left: 15rpx;
   padding-right: 15rpx;
   margin-right: 30rpx;
+  width: 20%;
 }
 
 .money {

@@ -2,49 +2,47 @@
   
   <view class="topbar">
     <text class="title">发布闲置</text>
-    <view class="ok">
-      <text>确认</text>
-    </view>
   </view>
 
-  <textarea class="info" placeholder="说说你的使用感受，入手渠道，转手原因..." placeholder-class="placeholder"></textarea>
+<form bindsubmit="btnSub"> 
 
-  <view class="photos">
-    <image class="photo" mode="aspectFill" src="/images/cherry.png"></image>
-    <image class="photo" mode="aspectFill" src="/images/cherry.png"></image>
-    <image class="photo" mode="aspectFill" src="/images/cherry.png"></image>
-    <image class="photo" mode="aspectFill" src="/images/cherry.png"></image>
-    <image class="add" src="/images/release.png"></image>
-  </view>
+  <textarea class="info" name="ifmt" placeholder="说说你的使用感受，入手渠道，转手原因..." placeholder-class="placeholder"></textarea>
+
+  <button class="add" bindtap="clickBtn">添加照片</button>
+  
+  <image wx:for="{{urlArr}}" wx:key="index" src="{{item}}"></image>
 
   <view class="campus">
     <view class="campus-title">校区</view>
     <view class="regions">
-      <view class="region">兴庆</view>
-      <view class="region">雁塔</view>
-      <view class="region">创新港</view>
+      <button class="region" bindtap="campus_xq" style='background:{{pageBackgroundColor11}}'>兴庆</button>
+      <button class="region" bindtap="campus_yt" style='background:{{pageBackgroundColor12}}'>雁塔</button>
+      <button class="region" bindtap="campus_cxg" style='background:{{pageBackgroundColor13}}'>创新港</button>
     </view>
   </view>
 
   <view class="category">
     <view class="category-title">分类</view>
     <scroll-view class="tabs" scroll-x="true">
-      <view class="tab">数码</view>
-      <view class="tab">服饰</view>
-      <view class="tab">书籍</view>
-      <view class="tab">数码</view>
-      <view class="tab">服饰</view>
-      <view class="tab">书籍</view>
-      <view class="tab">其他</view>
+      <button class="tab" bindtap="category_sm" style='background:{{pageBackgroundColor21}}'>数码</button>
+      <button class="tab" bindtap="category_fs" style='background:{{pageBackgroundColor22}}'>服饰</button>
+      <button class="tab" bindtap="category_sj" style='background:{{pageBackgroundColor23}}'>书籍</button>
+      <button class="tab" bindtap="category_sb" style='background:{{pageBackgroundColor24}}'>手办</button>
+      <button class="tab" bindtap="category_xz" style='background:{{pageBackgroundColor25}}'>鞋子</button>
+      <button class="tab" bindtap="category_mp" style='background:{{pageBackgroundColor26}}'>门票</button>
+      <button class="tab" bindtap="category_qt" style='background:{{pageBackgroundColor27}}'>其他</button>
     </scroll-view>
   </view>
 
   <view class="money">
     <view class="money-title">价格</view>
     <view class="money-input">
-      <input class="pre-money" placeholder="入手价格" placeholder-class="placeholder"></input>
-      <input class="now-money" placeholder="出售价格" placeholder-class="placeholder"></input>
+      <input class="pre-money" name="pre" placeholder="入手价格" placeholder-class="placeholder"></input>
+      <input class="now-money" name="now" placeholder="出售价格" placeholder-class="placeholder"></input>
     </view>
   </view>
 
+  <button class="ok" form-type="submit">确认</button>
+
+</form>
 </view>

@@ -1,14 +1,8 @@
 <view class="container">
 
   <swiper class="banner" autoplay="true">
-    <swiper-item>
-      <image class="banner-image" mode="aspectFill" src="/images/1.jpg"></image>
-    </swiper-item>
-    <swiper-item>
-      <image class="banner-image" mode="aspectFill" src="/images/2.jpg"></image>
-    </swiper-item>
-    <swiper-item>
-      <image class="banner-image" mode="aspectFill" src="/images/3.jpg"></image>
+    <swiper-item wx:for="{{photo}}" wx:key="index">
+      <image class="banner-image" mode="aspectFill" src="{{item}}"></image>
     </swiper-item>
   </swiper>
 
@@ -16,8 +10,8 @@
 
     <view class="row">
       <view class="money">
-        <text class="now-money">￥380</text>
-        <text class="pre-money">￥9998</text>
+        <text class="now-money">￥{{now}}</text>
+        <text class="pre-money">￥{{pre}}</text>
       </view>
 
       <view class="views">
@@ -26,7 +20,7 @@
     </view>
 
     <view class="title">
-      <text>9成新 苹果 iPhone7 Plus 128G 黑色</text>
+      <text>{{ifmt}}</text>
     </view>
 
     <view class="announcer">
